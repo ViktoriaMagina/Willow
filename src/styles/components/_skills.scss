@@ -1,0 +1,38 @@
+.skills{
+    margin-bottom: 161px;
+    &__inner{
+        background-image: url('../img/line.svg');
+        background-repeat: no-repeat;
+        background-position: top 170px left;
+        @include for-desktop{
+            background-image: none;
+        }
+    }
+    &__container{
+        max-width: 620px;
+        margin: 0 auto 0 auto;
+    }
+    &__title{
+        margin-bottom: 41px;
+    }
+    &__item{
+        border-top: 1px solid #DDE3E4;
+        padding: 40px 0;
+        &-title{
+            margin-bottom: 8px;
+            font-weight: 400;
+            font-size: 23px;
+            line-height: 32px;
+            letter-spacing: 0.72px;
+            color: #102226;
+            
+        }
+        &-text{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.32px;
+            color: #485B60;
+        }
+    }
+}

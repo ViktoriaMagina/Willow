@@ -1,0 +1,26 @@
+.creating{
+    margin-top: 124px;
+    margin-bottom: 150px;
+    &__inner{
+        background-image: url('../img/line.svg');
+        background-position: top right;
+        background-repeat: no-repeat;
+        @include for-tablet-landscape-min{
+            background-image: none;
+        }
+    }
+    &__title{
+        margin-bottom: 72px;
+    }
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 70px;
+        @include for-tablet-landscape{
+            gap: 30px;
+        }
+        @include for-tablet-portrait{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

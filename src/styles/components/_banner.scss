@@ -1,0 +1,92 @@
+.banner{
+    margin-bottom: 124px;
+    color: #FFFFFF;
+    &__inner{
+        padding: 100px 102px;
+        background-color: #1C3F3A;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: url('../img/banner/vector.svg');
+            top: 0;
+            right: 0;
+            @include for-desktop{
+                display: none;
+            }
+        }
+        @include for-desktop{
+            padding: 50px;
+        }
+        @include for-phone{
+            padding: 20px 20px 40px 20px;
+        }
+    }
+    &__content{
+        display: flex;
+        align-items: center;
+        column-gap: 128px;
+        @include for-desktop{
+            column-gap: 60px;
+        }
+        @include for-tablet-landscape-min{
+            flex-direction: column;
+            row-gap: 30px;
+        }
+    }
+    &__title{
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 64px;
+        letter-spacing: 1.68px;
+        max-width: 280px;
+        span{
+            color: #CBC7B5;
+        }
+        @include for-desktop{
+            font-size: 46px;
+            line-height: 54px;
+        }
+        @include for-tablet-landscape-min{
+            max-width: 100%;
+        }
+        @include for-tablet-portrait{
+            font-size: 36px;
+            line-height: 44px;
+        }
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 0.54px;
+        margin-bottom: 27px;
+        max-width: 359px;
+        @include for-desktop{
+            font-size: 14px;
+            line-height: 24px;
+            max-width: 500px;
+        }
+
+    }
+    &__link{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 10px 43px 12px 20px;
+        position: relative;
+        border: 1px solid #F1F3F3;
+        transition: all .3s ease-in-out;
+        &::after{
+            position: absolute;
+            content: url('../img/icon-white.svg');
+            right: 9px;
+            transition: all .3s ease-in-out;
+        }
+        &:hover{
+            opacity: .8;
+            &::after{
+                right: 3px;
+            }
+        }
+    }
+}

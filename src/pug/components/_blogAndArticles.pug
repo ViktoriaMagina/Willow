@@ -1,0 +1,17 @@
+include ./_blogAndArticles-item.pug
+
+section.blogAndArticles
+  .blogAndArticles__top
+    .container-mini 
+      .blogAndArticles__top-inner
+        h2.blogAndArticles__title.wow.title.animate__animated.animate__fadeIn Blog & Articles
+        a.blogAndArticles__link.default-link(href="#") Latest Article
+  .container-large
+    .swiper.blogAndArticles__slider
+      ul.swiper-wrapper.blogAndArticles__slider-inner
+        li.swiper-slide.blogAndArticles__slider-item
+          +blogAndArticles-item(1, "Marketing", "Why Figma works best for modern teams")
+        li.swiper-slide.blogAndArticles__slider-item
+          +blogAndArticles-item(2, "Marketing", "How to deliver clients a design system")  
+        li.swiper-slide.blogAndArticles__slider-item   
+          +blogAndArticles-item(3, "Marketing", "Curating a workplace that inspires all of us")

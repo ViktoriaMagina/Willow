@@ -1,0 +1,93 @@
+.awards{
+    margin-bottom: 124px;
+    &__title{
+        text-align: center;
+        margin: 0 auto 84px auto;
+        &::before{
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        @include for-desktop{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include for-tablet-portrait{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        
+    }
+    &__item{
+        border: 1px solid #DDE3E4;
+        padding: 41px 41px 45px 41px;
+        @include for-desktop{
+            padding: 30px;
+        }
+        @include for-tablet-portrait{
+            text-align: center;
+        }
+        &-img{
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+            margin-bottom: 32px;
+        }
+        &-box{
+            padding: 32px 0;
+            border-top: 1px solid #DDE3E4;
+            border-bottom: 1px solid #DDE3E4;
+            margin-bottom: 36px;
+            @include for-desktop{
+                padding: 15px 0;
+            }
+        }
+        &-subtitle{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 2px;
+            color: #485B60;
+            margin-bottom: 9px;
+            @include for-desktop{
+                font-size: 12px;
+                line-height: 22px;
+            }
+        }
+        &-title{
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0.72px;
+            color: #102226;
+            @include for-desktop{
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+        &-link{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.28px;
+            color: #102226;
+            position: relative;
+            padding-right: 28px;
+            &::after{
+                position: absolute;
+                right: 0;
+                width: 24px;
+                height: 24px;
+                content: url('../img/icon-black.svg');
+                transition: all .3s ease-in-out;
+            }
+            &:hover{
+                &::after{
+                    right: -6px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+mixin cases-item(img, title, text)
+    li.cases-item
+        .cases-item__shadow
+        img.cases-item__img(src=`./img/cases/img-${img}.jpg`, alt="img")
+        .cases-item__box
+            h4.cases-item__title= title
+            p.cases-item__text= text
+            a.cases-item__link(href="#") Learn More

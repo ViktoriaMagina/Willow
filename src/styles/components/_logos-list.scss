@@ -1,0 +1,19 @@
+.logos-list{
+    &__inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include for-tablet-landscape{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    &__item{
+        max-width: 180px;
+        height: 80px;
+    }
+    &__img{
+        height: inherit;
+        object-fit: contain;
+    }
+}

@@ -1,0 +1,24 @@
+doctype html
+head(lang='en')
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  link(rel='icon', href='./favicon.ico')
+  link(rel="stylesheet", href="https://unpkg.com/swiper@8/swiper-bundle.min.css")
+  link(rel='stylesheet', href='./css/style.min.css')
+  title Document
+include ../components/_header
+.wrapper
+  main.main 
+    include ../components/_logos-list
+    include ../components/_creating
+    include ../components/_cases     
+    include ../components/_skills   
+    include ../components/_awards
+    include ../components/_info-person
+    include ../components/_banner
+    include ../components/_blogAndArticles
+include ../components/_footer
+
+script(src="https://unpkg.com/swiper@8/swiper-bundle.min.js")
+script(src='./js/index.js')

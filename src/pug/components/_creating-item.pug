@@ -1,0 +1,7 @@
+mixin creating-item(img, title, text)
+    li.creating-item
+        
+        img.creating-item__img(src=`./img/creating-item/img-${img}.svg`, alt="img")
+        h4.creating-item__title= title
+        p.creating-item__text= text
+        a.creating-item__link(href="#") Learn More
